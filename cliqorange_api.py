@@ -18,7 +18,7 @@ body = {}
 headers = {'Content-type': 'application/json'}
 url = "http://api.cliqorange.com/api/v1/classify/traveling/"
 # Entr your user key
-body["user_key"] = "99bbf337dd42516f10b877587e1626bf"
+body["user_key"] = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 n = len(images)
 # Batch size
