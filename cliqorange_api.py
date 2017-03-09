@@ -11,12 +11,14 @@ images = []
 for image in images_list:
     images.append({"image": image})
 
-
 # Body of the request
 body = {}
 # It's required to specify Content-type
 headers = {'Content-type': 'application/json'}
-url = "http://api.cliqorange.com/api/v1/classify/traveling/"
+url = "http://api.cliqorange.com/api/v1/classify/travel/"
+# url = "http://api.cliqorange.com/api/v1/classify/experience/"
+# url = "http://api.cliqorange.com/api/v1/classify/activity/"
+# url = "http://api.cliqorange.com/api/v1/classify/conversion/"
 # Entr your user key
 body["user_key"] = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
@@ -39,4 +41,4 @@ for batch in range(reps):
 
 # We return list of results always saving order of images
 for i in range(len(results)):
-    print images[i], results[i]
+    print results[i]
